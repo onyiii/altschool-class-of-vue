@@ -7,8 +7,12 @@
     {{ color }}
   </button>
 </template>
+<script setup>
+import ColorPicker from "../composables/ColorPicker";
+const { message, colors, matchColor } = ColorPicker();
+</script>
 
-<script>
+<!-- <script>
 import { ref, reactive } from "@vue/reactivity";
 
 export default {
@@ -31,6 +35,6 @@ export default {
     return { colors, message, matchColor };
   },
 };
-</script>
+</script> -->
 
 <style></style>
